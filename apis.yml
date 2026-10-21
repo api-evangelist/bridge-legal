@@ -1,25 +1,60 @@
 aid: bridge-legal
+
 name: LexSpot
-description: 'LexSpot is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'LexSpot Consultants LLP is India’s leading legal technology company building AI‑powered SaaS tools for document drafting, advertisement compliance, and legal infrastructure. It offers precision legal tools grounded in expertise, serving the digital economy with AI‑driven drafting, compliance checks, and contract automation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bridge-legal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- LegalTech
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Hosts
+  url: hosts/bridge-legal-hosts.yml
+- type: Vendors
+  url: vendors/bridge-legal-vendors.yml
+- type: DomainSecurity
+  url: security/bridge-legal-domain-security.yml
+- type: Website
+  url: https://lexspot.in
+
+apis: []
+
 x-backed-by:
 - 500-global
-common:
-- type: Website
-  url: https://bridge.legal
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: LexSpot provides legal consulting services and does not offer a developer program or public API.
+  evidence:
+    - url: https://bridge-legal.com
+      status: 200
+  checked: '2026-10-21'
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

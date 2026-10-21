@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/bridge-legal/integrations
+- https://zapier.com/apps/lexspot/integrations
+- https://n8n.io/integrations/bridge-legal/
+- https://composio.dev/toolkits/bridge-legal
+- https://monid.ai/tools/bridge-legal
+checked:
+- https://composio.dev/toolkits/bridge-legal
+- https://monid.ai/tools/bridge-legal
+- https://n8n.io/integrations/bridge-legal/
+- https://zapier.com/apps/bridge-legal/integrations
+- https://zapier.com/apps/lexspot/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
